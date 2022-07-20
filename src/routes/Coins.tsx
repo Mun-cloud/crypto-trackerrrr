@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useQuery } from "react-query";
 import { fetchCoins } from "../api";
 import { Helmet } from "react-helmet";
+import Switches from "../components/Switches";
 
 const Container = styled.div`
   position: relative;
@@ -71,6 +72,7 @@ const Coins = () => {
 
   return (
     <Container>
+      <Switches />
       <Helmet>
         <title>코인</title>
       </Helmet>

@@ -4,6 +4,7 @@ import { useLocation, useParams, Routes, Route, useMatch } from "react-router";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { fetchCoinInfo, fetchCoinTickers } from "../api";
+import Switches from "../components/Switches";
 import Chart from "./Chart";
 import Price from "./Price";
 
@@ -171,6 +172,7 @@ function Coin() {
 
   return (
     <Container>
+      <Switches />
       <Helmet>
         <title>{name ? name : loading ? "Loading..." : infoData?.name}</title>
       </Helmet>

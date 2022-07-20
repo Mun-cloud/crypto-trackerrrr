@@ -5,7 +5,7 @@ import { isDarkAtom } from "../atoms";
 
 const IconBox = styled.div`
   position: absolute;
-  right: 10%;
+  right: 20px;
   top: 20px;
   display: flex;
 `;
